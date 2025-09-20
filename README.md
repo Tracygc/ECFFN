@@ -3,7 +3,6 @@ ECFFN: Efficient Cross-modality Feature Fusion Network for Multispectral Fusion 
 
 
 ### Dataset Structure
-
 ```
 dataset/
 ├── images/
@@ -47,7 +46,6 @@ names: ["person", "car", "bicycle"]
 -----------------------------------------------------------------------
 
 ```
-
 ### Install Dependencies
 Install the ultralytics package, including all requirements, in a Python>=3.8 environment with PyTorch>=1.8.
 ```
@@ -55,7 +53,6 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit
 pip install -r requirements.txt
 pip install ultralytics
 ```
-
 ### Python
 MCF train
 Step 1. Load the pre-trained weights, or use other methods to obtain a detection model with better single-modal or single-spectrum performance, and use the weights of the frozen part of the main branch as the weights for the network weight conversion in the third step (it is recommended to train both infrared and visible light separately for this purpose, to determine the main branch).
