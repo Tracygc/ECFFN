@@ -7,23 +7,23 @@ ECFFN: Efficient Cross-modality Feature Fusion Network for Multispectral Fusion 
 dataset/
 ├── images/
 │   ├── visible/
-│   │   ├── train/  # Store training visible light images
-│   │   └── val/    # Store validation visible light images
+│   │   ├── train/  # Store training visible images
+│   │   └── val/    # Store validation visible images
 │   └── infrared/
 │       ├── train/  # Store training infrared images
 │       └── val/    # Store validation infrared images
 └── labels/
     ├── visible/
-    │   ├── train/  # Store training visible light image labels
-    │   └── val/    # Store validation visible light image labels
+    │   ├── train/  # Store training visible image labels
+    │   └── val/    # Store validation visible image labels
     └── infrared/
         ├── train/  # Store training infrared image labels
         └── val/    # Store validation infrared image labels
 ---------------------------------------------------------------------
-# FLIR_aligned.yaml  (for aligned iimages or RGB images)
+# FLIR_aligned.yaml  (for aligned iimages or visible images)
 
 train: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/visible/train # 128 images
-val: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/visible/test # 128 images
+val: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/visible/val # 128 images
 
 
 # number of classes
@@ -35,7 +35,7 @@ names: ["person", "car", "bicycle"]
 # FLIR_aligned_IF.yaml  (for infrared images)
 
 train: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/infrared/train # 128 images
-val: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/infrared/test # 128 images
+val: G:/datasets/FLIR-align-3class/FLIR-align-3class/images/infrared/val # 128 images
 
 
 # number of classes
